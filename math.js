@@ -17,11 +17,15 @@ function divide(a, b) {
 }
 
 function formatGreeting(name) {
-  return `Hi, ${name}! Welcome to our app.`;
+  return `Hey ${name}, welcome aboard!`;
 }
-
-module.exports = { add, subtract, multiply, divide, formatGreeting, abs };
 
 function abs(n) {
   return n < 0 ? -n : n;
 }
+
+function max(a, b) {
+  return a > b ? a : b;
+}
+
+module.exports = { add, subtract, multiply, divide, formatGreeting, abs, max };
