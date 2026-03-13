@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, formatGreeting } = require("./math");
+const { add, subtract, multiply, divide, formatGreeting, clamp } = require("./math");
 
 let failures = 0;
 
@@ -40,3 +40,8 @@ if (failures > 0) {
 } else {
   console.log("\nAll tests passed");
 }
+
+// Clamp
+assert("clamp(5, 1, 10)", clamp(5, 1, 10), 5);
+assert("clamp(-3, 0, 100)", clamp(-3, 0, 100), 0);
+assert("clamp(999, 0, 100)", clamp(999, 0, 100), 100);
