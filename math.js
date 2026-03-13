@@ -20,4 +20,8 @@ function formatGreeting(name) {
   return `Hi, ${name}! Welcome to our app.`;
 }
 
-module.exports = { add, subtract, multiply, divide, formatGreeting };
+module.exports = { add, subtract, multiply, divide, formatGreeting, abs };
+
+function abs(n) {
+  return n < 0 ? -n : n;
+}
