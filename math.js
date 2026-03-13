@@ -20,8 +20,8 @@ function formatGreeting(name) {
   return `Hey ${name}, welcome aboard!`;
 }
 
-module.exports = { add, subtract, multiply, divide, formatGreeting, max };
-
 function max(a, b) {
   return a > b ? a : b;
 }
+
+module.exports = { add, subtract, multiply, divide, formatGreeting, max };
