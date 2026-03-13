@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, formatGreeting, max } = require("./math");
+const { add, subtract, multiply, divide, formatGreeting, abs, max } = require("./math");
 
 let failures = 0;
 
@@ -37,6 +37,11 @@ assert("formatGreeting('Alice')", formatGreeting("Alice"), "Hey Alice, welcome a
 // Max
 assert("max(3, 7)", max(3, 7), 7);
 assert("max(10, 2)", max(10, 2), 10);
+
+// Absolute value
+assert("abs(-5)", abs(-5), 5);
+assert("abs(3)", abs(3), 3);
+assert("abs(0)", abs(0), 0);
 
 if (failures > 0) {
   console.error(`\n${failures} test(s) failed`);
