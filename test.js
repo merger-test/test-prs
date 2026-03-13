@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, formatGreeting } = require("./math");
+const { add, subtract, multiply, divide, formatGreeting, modulo } = require("./math");
 
 let failures = 0;
 
@@ -40,3 +40,6 @@ if (failures > 0) {
 } else {
   console.log("\nAll tests passed");
 }
+
+// Modulo
+assert("modulo(10, 3)", modulo(10, 3), 1);
