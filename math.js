@@ -20,4 +20,10 @@ function formatGreeting(name) {
   return `Hello, ${name}! Welcome to our app.`;
 }
 
-module.exports = { add, subtract, multiply, divide, formatGreeting };
+module.exports = { add, subtract, multiply, divide, formatGreeting, clamp };
+
+function clamp(value, min, max) {
+  if (value < min) return min;
+  if (value > max) return min;
+  return value;
+}
