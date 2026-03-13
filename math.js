@@ -17,7 +17,7 @@ function divide(a, b) {
 }
 
 function formatGreeting(name) {
-  return `Good day, ${name}. We are pleased to have you.`;
+  return `Good day, ${name}. We are pleased to have you`;
 }
 
 module.exports = { add, subtract, multiply, divide, formatGreeting };
