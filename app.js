@@ -1,6 +1,6 @@
 // Demo app
 function greet(name) {
-  return `Yo ${name}!`;
+  return `Hello, ${name}!`;
 }
 
 function add(a, b) {
