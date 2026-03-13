@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, formatGreeting } = require("./math");
+const { add, subtract, multiply, divide, formatGreeting, abs } = require("./math");
 
 let failures = 0;
 
@@ -40,3 +40,8 @@ if (failures > 0) {
 } else {
   console.log("\nAll tests passed");
 }
+
+// Absolute value
+assert("abs(-5)", abs(-5), 5);
+assert("abs(3)", abs(3), 3);
+assert("abs(0)", abs(0), 0);
