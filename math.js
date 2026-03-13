@@ -21,3 +21,7 @@ function formatGreeting(name) {
 }
 
 module.exports = { add, subtract, multiply, divide, formatGreeting };
+
+function log(msg) {
+  console.log("[MATH] " + msg);
+}
