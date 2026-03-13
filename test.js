@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, formatGreeting } = require("./math");
+const { add, subtract, multiply, divide, formatGreeting, max } = require("./math");
 
 let failures = 0;
 
@@ -40,3 +40,7 @@ if (failures > 0) {
 } else {
   console.log("\nAll tests passed");
 }
+
+// Max
+assert("max(3, 7)", max(3, 7), 7);
+assert("max(10, 2)", max(10, 2), 10);
