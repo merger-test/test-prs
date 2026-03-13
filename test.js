@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, formatGreeting } = require("./math");
+const { add, subtract, multiply, divide, formatGreeting, power } = require("./math");
 
 let failures = 0;
 
@@ -33,6 +33,11 @@ assertThrows("divide(1, 0) throws", () => divide(1, 0));
 
 // Greeting
 assert("formatGreeting('Alice')", formatGreeting("Alice"), "Hello, Alice! Welcome to our app.");
+
+// Power
+assert("power(2, 3)", power(2, 3), 8);
+assert("power(5, 0)", power(5, 0), 1);
+assert("power(3, 2)", power(3, 2), 9);
 
 if (failures > 0) {
   console.error(`\n${failures} test(s) failed`);
