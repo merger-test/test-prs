@@ -12,3 +12,5 @@ function multiply(a, b) {
 }
 
 module.exports = { greet, add, multiply };
+
+function sqrt(a) { return Math.sqrt(a); }
