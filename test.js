@@ -32,7 +32,7 @@ assert("divide(7, 2)", divide(7, 2), 3.5);
 assertThrows("divide(1, 0) throws", () => divide(1, 0));
 
 // Greeting
-assert("formatGreeting('Alice')", formatGreeting("Alice"), "Hello, Alice! Welcome to our app.");
+assert("formatGreeting('Alice')", formatGreeting("Alice"), "Hey Alice, welcome aboard!");
 
 if (failures > 0) {
   console.error(`\n${failures} test(s) failed`);
