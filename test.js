@@ -32,7 +32,7 @@ assert("divide(7, 2)", divide(7, 2), 3.5);
 assertThrows("divide(1, 0) throws", () => divide(1, 0));
 
 // Greeting
-assert("formatGreeting('Alice')", formatGreeting("Alice"), "Hi, Alice! Welcome to our app.");
+assert("formatGreeting('Alice')", formatGreeting("Alice"), "Hey Alice, welcome aboard!");
 
 // Max
 assert("max(3, 7)", max(3, 7), 7);
