@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, formatGreeting } = require("./math");
+const { add, subtract, multiply, divide, formatGreeting, power } = require("./math");
 
 let failures = 0;
 
@@ -40,3 +40,8 @@ if (failures > 0) {
 } else {
   console.log("\nAll tests passed");
 }
+
+// Power
+assert("power(2, 3)", power(2, 3), 8);
+assert("power(5, 0)", power(5, 0), 1);
+assert("power(3, 2)", power(3, 2), 9);
