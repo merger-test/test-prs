@@ -17,13 +17,17 @@ function divide(a, b) {
 }
 
 function formatGreeting(name) {
-  return `Hello, ${name}! Welcome to our app.`;
+  return `Hey ${name}, welcome aboard!`;
 }
 
-module.exports = { add, subtract, multiply, divide, formatGreeting, clamp };
+function max(a, b) {
+  return a > b ? a : b;
+}
 
 function clamp(value, min, max) {
   if (value < min) return min;
-  if (value > max) return min;
+  if (value > max) return max;
   return value;
 }
+
+module.exports = { add, subtract, multiply, divide, formatGreeting, max, clamp };

@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, formatGreeting, clamp } = require("./math");
+const { add, subtract, multiply, divide, formatGreeting, max, clamp } = require("./math");
 
 let failures = 0;
 
@@ -32,7 +32,11 @@ assert("divide(7, 2)", divide(7, 2), 3.5);
 assertThrows("divide(1, 0) throws", () => divide(1, 0));
 
 // Greeting
-assert("formatGreeting('Alice')", formatGreeting("Alice"), "Hello, Alice! Welcome to our app.");
+assert("formatGreeting('Alice')", formatGreeting("Alice"), "Hey Alice, welcome aboard!");
+
+// Max
+assert("max(3, 7)", max(3, 7), 7);
+assert("max(10, 2)", max(10, 2), 10);
 
 // Clamp
 assert("clamp(5, 1, 10)", clamp(5, 1, 10), 5);
