@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, formatGreeting, max } = require("./math");
+const { add, subtract, multiply, divide, formatGreeting, max, clamp } = require("./math");
 
 let failures = 0;
 
@@ -37,6 +37,11 @@ assert("formatGreeting('Alice')", formatGreeting("Alice"), "Hey Alice, welcome a
 // Max
 assert("max(3, 7)", max(3, 7), 7);
 assert("max(10, 2)", max(10, 2), 10);
+
+// Clamp
+assert("clamp(5, 1, 10)", clamp(5, 1, 10), 5);
+assert("clamp(-3, 0, 100)", clamp(-3, 0, 100), 0);
+assert("clamp(999, 0, 100)", clamp(999, 0, 100), 100);
 
 if (failures > 0) {
   console.error(`\n${failures} test(s) failed`);
